@@ -22,11 +22,11 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
-/** @var mixed $plugin */
-$plugin->component = 'block_accessibility_filescan';
-$plugin->version = 2024031900;
-$plugin->requires = 2022041906.02;
-$plugin->maturity = MATURITY_ALPHA;
-$plugin->release = '1.0.0';
+// defined('MOODLE_INTERNAL') || die();
+//
+// $observers = array(
+// array(
+// 'eventname' => '\block_accessibility_filescan\event\invalidate_results_cache',
+// 'callback' => 'block_accessibility_filescan_observer::invalidate_results_cache'
+// )
+// );

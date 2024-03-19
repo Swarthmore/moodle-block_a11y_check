@@ -27,47 +27,9 @@
 
     Context variables required for this template:
     * none
-
-    Example context (json):
-        scanresults: {
-            totalpdfs: number,
-            scanned: {
-                total: number,
-                pdfs: []
-            },
-            inqueue: {
-                total: number,
-                pdfs: []
-            },
-            notinqueue: {
-                total: number,
-                pdfs: []
-            }
-        },
-        a11yresults: {
-            pass: {
-                total: number,
-                pdfs: []
-            },
-            warn: [
-                total: number,
-                pdfs: []
-            ],
-            fail: [
-                total: number,
-                pdfs: []
-            ],
-        },
-        lastScan: string
 }}
 
-
-<div class="d-flex flex-column align-items-start">
-
-  <section class="a11y-details-progress my-3 w-100">
-    <div id="a11yDetailsProgress"></div>
-  </section>
-
-  <section id="a11y-chart-container" class="a11y-pie-chart my-3 w-100"></section>
-
+<div id="block-accessibility-filescan-root" class="d-flex flex-column align-items-start">
+    <div id="block-accessibility-filescan-pie-chart-root"></div>
+    <div id="block-accessibility-filescan-more-details-root"></div>
 </div>

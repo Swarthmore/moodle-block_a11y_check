@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -14,89 +13,50 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
+//
 /**
-* Version information for block_a11y_check
-*
-* @package   block_a11y_check
-* @copyright 2023 Swarthmore College
-* @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
-*/
+ * Version information for block_accessibility_filescan
+ *
+ * @package   block_accessibility_filescan
+ * @copyright 2023 Swarthmore College
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
 defined('MOODLE_INTERNAL') || die();
 
-$capabilities = array(
+$capabilities = [
 
-  'block/a11y_check:addinstance' => array(
+  'block/accessibility_filescan:addinstance' => [
     'riskbitmask' => RISK_SPAM | RISK_XSS,
     'captype' => 'write',
     'contextlevel' => CONTEXT_BLOCK,
-    'archetypes' => array(
+    'archetypes' => [
       'editingteacher' => CAP_ALLOW,
       'manager' => CAP_ALLOW,
-      'coursecreator' => CAP_ALLOW
-    ),
-    'clonepermissionsfrom' => 'moodle/site:manageblocks'
-  ),
+      'coursecreator' => CAP_ALLOW,
+    ],
+    'clonepermissionsfrom' => 'moodle/site:manageblocks',
+  ],
 
-  'block/a11y_check:myaddinstance' => array(
+  'block/accessibility_filescan:myaddinstance' => [
     'captype' => 'write',
     'contextlevel' => CONTEXT_SYSTEM,
-    'archetypes' => array(
-      'user' => CAP_PREVENT
-    )
-  ),
+    'archetypes' => [
+      'user' => CAP_PREVENT,
+    ],
+  ],
 
-  'block/a11y_check:viewpages' => array(
+  'block/accessibility_filescan:view' => [
     'captype' => 'read',
     'contextlevel' => CONTEXT_COURSE,
-    'legacy' => array(
+    'legacy' => [
       'guest' => CAP_PREVENT,
       'student' => CAP_PREVENT,
       'teacher' => CAP_ALLOW,
       'editingteacher' => CAP_ALLOW,
       'coursecreator' => CAP_ALLOW,
-      'manager' => CAP_ALLOW
-    )
-  ),
+      'manager' => CAP_ALLOW,
+    ],
+  ],
 
-  'block/a11y_check:managepages' => array(
-    'captype' => 'read',
-    'contextlevel' => CONTEXT_COURSE,
-    'legacy' => array(
-      'guest' => CAP_PREVENT,
-      'student' => CAP_PREVENT,
-      'teacher' => CAP_PREVENT,
-      'editingteacher' => CAP_ALLOW,
-      'coursecreator' => CAP_ALLOW,
-      'manager' => CAP_ALLOW
-    )
-  ),
-
-  'block/a11y_check:scan' => array(
-    'riskbitmask' => RISK_PERSONAL,
-    'captype' => 'read',
-    'contextlevel' => CONTEXT_COURSE,
-    'archetypes' => array(
-      'guest'           => CAP_PREVENT,
-      'student'         => CAP_PREVENT,
-      'teacher'         => CAP_PREVENT,
-      'coursecreator'   => CAP_ALLOW,
-      'editingteacher'  => CAP_ALLOW,
-      'manager'         => CAP_ALLOW
-    )
-  ),
-
-  'block/a11y_check:viewadminreport' => array(
-    'captype' => 'read',
-    'contextlevel' => CONTEXT_BLOCK,
-    'archetypes' => array(
-      'guest'          => CAP_PREVENT,
-      'student'        => CAP_PREVENT,
-      'teacher'        => CAP_PREVENT,
-      'editingteacher' => CAP_PREVENT,
-      'coursecreator'  => CAP_PREVENT,
-      'manager'        => CAP_ALLOW
-    )
-  )
-);
+];

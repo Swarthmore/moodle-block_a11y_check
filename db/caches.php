@@ -22,11 +22,11 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
-/** @var mixed $plugin */
-$plugin->component = 'block_accessibility_filescan';
-$plugin->version = 2024031900;
-$plugin->requires = 2022041906.02;
-$plugin->maturity = MATURITY_ALPHA;
-$plugin->release = '1.0.0';
+// defined('MOODLE_INTERNAL') || die;
+//
+// $definitions = array(
+// 'accessibility_filescan_results' => array(
+// 'mode' => cache_store::MODE_APPLICATION,
+// 'simplekeys' => True
+// )
+// );

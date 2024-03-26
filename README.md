@@ -8,10 +8,16 @@ Moodle block plugin to display accessibility results from the [local_accessibili
 
 ## Installation
 
-```bash
+### From the CLI
+
+```sh
 MOODLE_ROOT=/path/to/your/moodle
 git clone https://github.com/aweed1/moodle-block_accessibility_filescan $MOODLE_ROOT/blocks/accessibility_filescan
 ```
+
+### From Moodle
+
+Download the `main` branch of this repo, then upload via the Moodle plugin installation page.
 
 ## Configuration
 
